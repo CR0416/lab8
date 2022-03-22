@@ -12,11 +12,12 @@ fs.readFile('./index.html', function(err, html) {
         "Content-Type": "text/html"                                                                                                                                                                                                         
     })                                                                                                                                                                                                                                      
     response.write(html);     
-    response.end()                                                                                                                                                                                
+    response.end()
+    app.listen(port)                                                                                                                                                                                                                           
+    console.log(                                                                                                                                                                                                                                
+    `the server has started and is litening on port number: =${port}`                                                                                                                                                                       
+);                                                                                                                                                                                    
 })
 });                                                                                                                                                                                                                                     
 
-app.listen(port)                                                                                                                                                                                                                           
-console.log(                                                                                                                                                                                                                                
-    `the server has started and is litening on port number: =${port}`                                                                                                                                                                       
-);                                                                          
+                                                                      
